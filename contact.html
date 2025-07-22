@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Contact - Levente Pocsay" data-hu="Kapcsolat - Pocsay Levente">Contact - Levente Pocsay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <header>
+    <nav class="navbar">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <a href="index.html" class="logo">🏠</a>
+      <ul class="nav-links">
+        <li><a data-en="Experience" data-hu="Munkatapasztalat" href="experience.html">Experience</a></li>
+        <li><a data-en="Education" data-hu="Tanulmányok" href="education.html">Education</a></li>
+        <li><a data-en="Activities & Events" data-hu="Események" href="activities.html">Activities & Events</a></li>
+        <li><a data-en="Contact" data-hu="Kapcsolat" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="lang-switch" onclick="toggleLanguage()">EN / HU</button>
+  </header>
+  <main>
+    <section class="content">
+      <h1 data-en="Contact information" data-hu="Kapcsolat">Contact information</h1>
+      <div class="contact-cards">
+        <a class="contact-card email">
+          <span class="contact-text">📧 lpocsay@gmail.com</span>
+          <button class="copy-btn" onclick="copyToClipboard(this)" title="Copy to clipboard">📋</button>
+        </a>
+
+        <a href="https://facebook.com/pleventel" class="contact-card facebook" target="_blank">
+          <img src="img/facebook.png" alt="Facebook">
+          <span>facebook.com/pleventel</span>
+        </a>
+
+        <a href="https://linkedin.com/in/pleventel" class="contact-card linkedin" target="_blank">
+          <img src="img/linkedin.png" alt="LinkedIn">
+          <span>linkedin.com/in/pleventel</span>
+        </a>
+
+        <a href="https://github.com/pleventel" class="contact-card github" target="_blank">
+          <img src="img/github.png" alt="GitHub">
+          <span>github.com/pleventel</span>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p data-en="&copy;2025 Levente L. Pocsay. All rights reserved." data-hu="&copy;2025 Pocsay Levente László. Minden jog fenntartva.">&copy; 2025 Levente Pocsay. All rights reserved.</p>
+  </footer>
+  <button onclick="scrollToTop()" id="topBtn">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

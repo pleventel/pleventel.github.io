@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-en="Experience - Levente Pocsay" data-hu="Munkatapasztalat - Pocsay Levente">Experience - Levente Pocsay</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <a href="index.html" class="logo">🏠</a>
+      <ul class="nav-links">
+        <li><a data-en="Experience" data-hu="Munkatapasztalat" href="experience.html">Experience</a></li>
+        <li><a data-en="Education" data-hu="Tanulmányok" href="education.html">Education</a></li>
+        <li><a data-en="Activities & Events" data-hu="Események" href="activities.html">Activities & Events</a></li>
+        <li><a data-en="Contact" data-hu="Kapcsolat" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="lang-switch" onclick="toggleLanguage()">EN / HU</button>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="content">
+        <h1 data-en="Experience" data-hu="Tapasztalat">Experience</h1>
+
+        <!-- Current / most recent company block -->
+        <div class="exp-company">
+          <div class="exp-current">
+            <p data-en="June 2025 - Present" data-hu="2025. június - jelenleg">June 2025 - Present</p>
+            <h2 data-en="Research Trainee" data-hu="Kutatási gyakornok">Research Trainee</h2>
+            <h3 class="company"data-en="HUN-REN Wigner Research Centre for Physics" data-hu="HUN-REN Wigner Fizikai Kutatóközpont">HUN-REN Wigner Research Centre for Physics</h3>
+            <p class="department" data-en="Data and Compute Intensive Sciences Research Group, Department of Computational Sciences"
+              data-hu="Adat- és Számításintenzív Tudományok Kutatócsoport, Komputációs Tudományok Osztálya">
+              <i>Data and Compute Intensive Sciences Research Group, Department of Computational Sciences</i></p>
+            <p data-en="📍: 29-33 Konkoly-Thege Miklós Street, Budapest, 1121, HUNGARY" data-hu="📍: 1121 Budapest, Konkoly-Thege Miklós út 29-33., Magyarország">📍: 29-33 Konkoly-Thege Miklós Street, Budapest, 1121, HUNGARY</p>
+            <p data-en="<u>Description:</u> Working on anomaly detection for time series datasets with ALT method. Creating our own artificial dataset for our anomaly detection; search for previous research and publication; finding time series databases (containing anomaly) appropriate for the project's purporse."
+              data-hu="<u>Leírás:</u> Anomáliák keresése idősoros adatokon az ALT módszer segítségével. A kutatási célhoz megfelelő mesterséges (saját) adatbázisok előállítása; korábbi kutatások, publikációk keresése az adott témáról; a projekt céljához megfelelő (anomáliát tartalmazó) idősoros adatbázisok felkutatása.">
+              <u>Description:</u> Working on anomaly detection for time series datasets with ALT method. Creating our own artificial dataset for our anomaly detection; search for previous research and publication; finding time series databases - containing anomaly - appropriate for the project's purporse.
+            </p>
+            <p data-en="<u>Used tools:</u> Python, Numpy, matplotlib, pandas, PyTorch & GitHub."
+              data-hu="<u>Használt szoftverek:</u> Python, Numpy, matplotlib, pandas, PyTorch és GitHub.">
+              <u>Used tools:</u> Python, Numpy, matplotlib, pandas, PyTorch & GitHub.
+            </p>
+            <p data-en="<u>Supervisor:</u> Antal Jakovác, PhD. (<a href='https://wigner.hu/en/infopages/jakovac.antal' target='_blank'>Wigner</a>)" data-hu="<u>Témavezető:</u> dr. Jakovác Antal (<a href='https://wigner.hu/infopages/jakovac.antal' target='_blank'>Wigner</a>)"><u>Supervisor:</u> Antal Jakovác, PhD. (<a href="https://wigner.hu/en/infopages/jakovac.antal" target="_blank">Wigner</a>)</p>
+          </div>
+
+          <!-- Collapsible previous roles at the same company -->
+          <button class="toggle-btn" onclick="toggleCollapse(this)">
+            <span data-en="Show previous roles" data-hu="Korábbi pozíciók mutatása">Show previous roles</span>
+          </button>
+          <div class="exp-collapse">
+            <div class="exp-previous">
+              <p data-en="September 2024 - May 2025" data-hu="2024. szeptember - 2025. május">September 2024 - May 2025</p>
+              <h3 data-en="Student Researcher" data-hu="Kutatódiák">Student Researcher</h3>
+              <p class="department" data-en="Data and Compute Intensive Sciences Research Group, Department of Computational Sciences"
+                 data-hu="Adat- és Számításintenzív Tudományok Kutatócsoport, Komputációs Tudományok Osztálya">
+                <i>Data and Compute Intensive Sciences Research Group, Department of Computational Sciences</i></p>
+              <p data-en="<u>Description:</u> Working on recording own dataset with different forms of activities - including walking, running and climbing stairs - for testing the ALT method; creating a data processing software using Python with its additional modules."
+                data-hu="<u>Leírás:</u> Saját adatbázis rögzítése különböző mozgásformákkal (gyaloglás, futás és lépcsőzés) az ALT módszer tesztelésére; az adatokat feldolgozó szoftver elkészítése Python és annak kiegészítő moduljai segítségével.">
+                <u>Description:</u> Working on recording own dataset with different forms of activities - including walking, running and climbing stairs - for testing the ALT method; creating a data processing software using Python with its additional modules.
+              </p>
+              <p data-en="<u>Used tools:</u> Python, Numpy, matplotlib, pandas, PyTorch & GitHub."
+                 data-hu="<u>Használt szoftverek:</u> Python, Numpy, matplotlib, pandas, PyTorch és GitHub.">
+                <u>Used tools:</u> Python, Numpy, matplotlib, pandas, PyTorch & GitHub.
+              </p>
+              <p data-en="<u>Supervisor:</u> Antal Jakovác, PhD. (<a href='https://wigner.hu/en/infopages/jakovac.antal' target='_blank'>Wigner</a>)" data-hu="<u>Témavezető:</u> dr. Jakovác Antal (<a href='https://wigner.hu/infopages/jakovac.antal target='_blank''>Wigner</a>)"><u>Supervisor:</u> Antal Jakovác, PhD. (<a href="https://wigner.hu/en/infopages/jakovac.antal" target="_blank">Wigner</a>)</p>
+            </div>
+
+            <div class="exp-previous">
+              <p data-en="1 July 2024 - 5 July 2024" data-hu="2024. július 1-5.">1 July 2024 - 5 July 2024</p>
+              <h3 data-en="Summer Camp Student" data-hu="Nyári Kutatódiák">Summer Camp Student</h3>
+              <p class="department" data-en="V. Wigner Summer Research Camp" data-hu="V. Wigner Nyári Kutatódiák Tábor">V. Wigner Summer Research Camp</p>
+              <p data-en="<u>Description:</u> Member of the Data and Compute Intensive Sciences Research Group during the camp."
+                data-hu="<u>Leírás:</u>  Az Adat- és Számításintenzív Kutatócsoport tagja a tábor ideje alatt.">
+                <u>Description:</u> Member of the Data and Compute Intensive Sciences Research Group during the camp.
+              </p>
+              <p data-en="<u>Responsibilities:</u> Creating plots with matplotlib, analysing time series databases with the ALT method."
+                data-hu="<u>Feladatok:</u> Diagramok készítése matplotlib-bel, idősoros adatok ALT módszerrel való feldolgozásának elemzése.">
+                <u>Responsibilities:</u> Creating plots with matplotlib, analysing time series databases with the ALT method.
+              </p>
+              <p data-en="<u>Used tools:</u> Python, NumPy, matplotlib."
+                data-hu="<u>Használt szoftverek:</u> Python, Numpy, matplotlib.">
+                <u>Used tools:</u> Python, NumPy, matplotlib.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--Community services-->
+        <p style="color: white;">Placeholder text.</p>
+        <h1 data-en="Community service" data-hu="Önkéntes tevékenységek">Community service</h1>
+        <div class="exp-company">
+          <div class="exp-current">
+            <p data-en="September 2019 - May 2025" data-hu="2019. szeptember - 2025. május">September 2019 - May 2025</p>
+            <h2 data-en="Member of Student Council" data-hu="Diákönkormányzati tag">Member of Student Council</h2>
+            <h3 data-en="Földes Ferenc Secondary Grammar School" data-hu="Földes Ferenc Gimnázium">Földes Ferenc Secondary Grammar School</h3>
+            <p data-en="📍: 5 Kelemen Didák Street Miskolc, 3525, HUNGARY" data-hu="📍: 3525 Miskolc, Kelemen Didák utca 5, Magyarország">📍: 5 Kelemen Didák Street Miskolc, 3525, HUNGARY</p>
+            <p data-en="<u>Tasks:</u> Representing the interest of the class towards the school's management, passing information (about upcoming school events) to the class teacher and classmates." 
+              data-hu="<u>Feladatok:</u> Az osztály érdekének képviselete a vezetőség felé, információk átadása az osztályfőnök és az osztálytársak irányába.">
+              <u>Tasks:</u> Representing the interest of the class towards the school's management, passing information (about upcoming school events) to the class teacher and classmates.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p data-en="&copy;2025 Levente L. Pocsay. All rights reserved." data-hu="&copy;2025 Pocsay Levente László. Minden jog fenntartva.">&copy; 2025 Levente Pocsay. All rights reserved.</p>
+  </footer>
+  <button onclick="scrollToTop()" id="topBtn">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

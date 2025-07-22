@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #EAEBED;
+  color: #5D737E;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #4357AD;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center; /* center navbar */
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #F29E4C;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  color: #EAEBED;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.lang-switch {
+  background-color: #BF211E;
+  color: #EAEBED;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  border-radius: 4px;
+  position: absolute;
+  right: 1rem;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: #EAEBED;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #4357AD;
+    display: none;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .menu-toggle:checked + .menu-icon + .logo + .nav-links {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1000px;
+  min-width: 70%;
+  margin: 0 auto; /* center horizontally */
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+}
+
+.content h1 {
+  color: #BF211E;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h3 {
+  font-variant: small-caps;
+  font-size: 20px;
+}
+
+.content p {
+  line-height: 1.6;
+}
+
+/*Footer*/
+footer {
+  background-color: #4357AD;
+  color: #EAEBED;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+}
+
+/*Back to the top button*/
+#topBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 999;
+  background-color: #4357AD;
+  color: white;
+  height: 40px;
+  width: 40px;
+  border: none;
+  outline: none;
+  padding: none;
+
+  border-radius: 0.2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  display: none; /* hidden by default */
+  transition: background-color 0.3s;
+}
+
+#topBtn:hover {
+  background-color: #2e3f80;
+}
+
+#topBtn img {
+  width: 24px;    /* adjust size as you like */
+  height: 24px;
+}
+
+
+
+/*Styles for Homepage*/
+.skills-section {
+  background-color: white;
+  border-left: 6px solid #BF211E;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.skills-section h2 {
+  color: #F29E4C;
+  margin-bottom: 0.8rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  padding: 0.4rem 0;
+  font-size: 1rem;
+  color: #5D737E;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  flex: 1 1 300px;
+}
+
+.profile-pic-wrapper {
+  flex: 0 0 auto;
+  max-width: 200px;
+}
+
+.profile-pic {
+  width: 100%;
+  border-radius: 3%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#quote {
+  font-style: italic;
+  color: #4357AD;
+  font-size: larger;
+  margin-top: 10px;
+}
+
+
+
+/*For use in Education and Experience pages*/
+p.department {
+  font-style: italic;
+}
+
+
+
+/*Styles for Experience page:*/
+.exp-company {
+  border: 2px solid #F29E4C;
+  color: #5D737E;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.exp-current, .exp-previous {
+  padding: 1rem 1.5rem;
+}
+
+.exp-current h2, .exp-previous h3 {
+  color: #F29E4C;
+  font-variant: normal;
+}
+
+.toggle-btn {
+  width: 100%;
+  text-align: left;
+  background-color: #F29E4C;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-top: 1px solid #F29E4C;
+  cursor: pointer;
+  outline: none;  
+  transition: background-color 0.3s;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+}
+
+.toggle-btn:hover {
+  background-color: #e58f3d;
+}
+
+.exp-collapse {
+  display: none;
+}
+
+
+
+/*Boxes for Education page:*/
+.edu-act-block {
+  border: 2px solid #F29E4C;
+  color: #5D737E;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.edu-act-block h2 {
+  margin-bottom: 0rem;
+  color: #F29E4C;
+}
+
+.edu-act-block p {
+  margin: 0.2rem 0;
+}
+
+
+
+/*Boxes for Contact page:*/
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: white;
+  border: 2px solid #4357AD;
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  color: #4357AD;
+  font-size: 1rem;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.contact-card img {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  background-color: #EAEBED;
+}
+
+.contact-card {
+  position: relative;
+  justify-content: space-between;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #4357AD;
+  transition: transform 0.2s;
+}
+
+.copy-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Optional: different border colors per platform */
+.contact-card.facebook { border-color: #4267B2; }
+.contact-card.linkedin { border-color: #0077B5; }
+.contact-card.github { border-color: #333; }
+.contact-card.email { border-color: #BF211E; }
